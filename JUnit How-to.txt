@@ -1,0 +1,26 @@
+Take a look under "lib"
+
+You should see two .jar files: "hamcrest-core-1.3" and "junit-4.12". If they're there,
+leave them alone. If they're not, go look up JUnit online and download those two jar
+files. (They should be easy to find.) Put them directly in the "lib" folder, not
+in any of the subdirectories.
+
+Now open the project in Netbeans as usual. All of our actual code is where it was before, nothing
+should be different there.
+
+You'll notice there are now two additional folders: Test Packages and Test Libraries. That's what
+we're interested in right now.
+
+Go to "Test Packages" and into "default package." (Apparently putting stuff in default package
+is bad, but I haven't figured out how to put it anywhere else yet. For now, it'll work.)
+
+There's a file called WireTest.java. It is, as the name suggests, a test to check that the Wire
+class does what it's supposed to. Should be pretty clear how that works, there's comments
+and all the code is pretty straightforward.
+
+To run the test, right click on "default package" and click the option "Test Package."
+In the area below, you should see something indicating that the tests passed.
+
+If you're feeling ambitious and want to see what a failed test looks like, go into the WireTest code
+and look for the fail case I've commented out. If you get rid of the comment marks the test
+should now fail, and it will provide exact details about WHY the test failed.
